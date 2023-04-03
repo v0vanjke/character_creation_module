@@ -3,9 +3,7 @@ from graphic_arts.start_game_banner import run_screensaver
 
 
 def attack(char_name: str, char_class: str) -> str:
-    """
-    Выполняет атаку в зависимости от класса.
-    """
+    """Выполняет атаку в зависимости от класса."""
     if char_class == 'warrior':
         return f'{char_name}' \
                f' нанёс урон противнику равный {5 + randint(3, 5)}'
@@ -18,9 +16,7 @@ def attack(char_name: str, char_class: str) -> str:
 
 
 def defence(char_name: str, char_class: str) -> str:
-    """
-    Выполняет защиту.
-    """
+    """Выполняет защиту."""
     if char_class == 'warrior':
         return (f'{char_name} блокировал {10 + randint(5, 10)} урона')
     if char_class == 'mage':
@@ -30,9 +26,7 @@ def defence(char_name: str, char_class: str) -> str:
 
 
 def special(char_name: str, char_class: str) -> str:
-    """
-    Применяет спец умение.
-    """
+    """Применяет спец умение."""
     if char_class == 'warrior':
         return (f'{char_name}'
                 f' применил специальное умение «Выносливость {80 + 25}»')
@@ -45,9 +39,7 @@ def special(char_name: str, char_class: str) -> str:
 
 
 def start_training(char_name: str, char_class: str) -> str:
-    """
-    Начало тренировки.
-    """
+    """Начало тренировки."""
     if char_class == 'warrior':
         print(f'{char_name}, ты Воитель — отличный боец ближнего боя.')
     if char_class == 'mage':
@@ -73,9 +65,7 @@ def start_training(char_name: str, char_class: str) -> str:
 
 
 def choice_char_class() -> str:
-    """
-    Возвращает класс.
-    """
+    """Возвращает класс."""
     approve_choice: str = ''
     char_class: str = ''
     while approve_choice != 'y':
